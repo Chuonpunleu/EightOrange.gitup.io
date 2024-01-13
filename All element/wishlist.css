@@ -1,0 +1,759 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    display: flex; /* Make the banner a flex container */
+    align-items: center;
+    justify-content: space-between; /* Spread the children elements */
+    background-color: lightgrey;
+    padding: 3px;
+}
+
+.welcome-text {
+    margin-left: 20px;
+    color: #050505;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-left:1000px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #050505;
+    padding: 4px;
+
+}
+
+.currency-options select {
+    width: 70px;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 30px;
+}
+
+
+.search-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.search-section {
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 60px;
+}
+
+.categories-dropdown {
+    flex: 1; /* Allow the dropdown to take remaining space */
+    padding: 8px;
+    height: 39px;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 5px;
+    margin-left: 500px;
+}
+
+.search-box {
+    flex: 2; /* Allow the search box to take more space */
+    padding: 10px;
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+
+.search-button {
+    background-color: #ffffff;
+    color: orange;
+    border: 2px solid orange;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.account-dropdown
+.cart-dropdown{
+    font-size: 16px;
+    color: orange;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+
+.account-dropdown i,
+.cart-dropdown i {
+    font-size: 28px; /* Adjust icon size */
+}
+
+.account-dropdown-text,
+.cart-dropdown-text {
+    display: flex;
+    color: orange;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center; /* Align text to the center */
+    border-radius: 5px; /* Make it round */
+    width: 200px; /* Adjusted width */
+    top: 50px; /* Adjusted top position */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.account-dropdown:hover .dropdown-content,
+.cart-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Adjusted margin for better spacing */
+.account-dropdown {
+    margin-left: 100px;
+}
+
+.cart-dropdown {
+    margin-right: 100px;
+}
+
+
+
+
+body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+            color: white;
+            height: 50px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(240, 156, 1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar a.active {
+            background-color: rgb(240, 156, 1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    /*Pages drop down*/
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+  
+      nav {
+        background-color: #333;
+        overflow: hidden;
+      }
+  
+      nav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+  
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+  
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+  
+      .nav-content {
+        display: none;
+        position: absolute;
+        background-color: orange;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+  
+      .nav-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+  
+      .dropdown:hover .nav-content {
+        display: block;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 1100px;
+        margin: 20px auto;
+    }
+    
+    .page-wrap {
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
+    .my-wishlists {
+        color: #333;
+    }
+    
+    .new-wishlists {
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #c7c6c6;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+    
+    h4 {
+        color: #555;
+    }
+    
+    .primary-input {
+        width: 900px;
+        padding: 18px 25px;
+        margin-bottom: 10px;
+        background-color: #c7c6c6;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input:focus {
+        background-color: #c7c6c6;
+        outline: none;
+    }
+    .col-10, .col-2{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .button {
+        display: flex;
+        padding: 20px 25px 20px 25px; /* Adjust the vertical padding to make the button shorter */
+        line-height: 1; /* Set line-height to 1 for a compact button */
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        background-color: #ff9700;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    #wish-button{
+        align-items: center;
+        margin-top: 10px;
+        border-bottom: 10px;
+    }    
+    
+    .button:hover {
+        background-color: #e78b00;
+    }
+    
+    /* .table-responsive */
+    .table-responsive {
+        overflow-x: auto;
+    }
+    
+    .table-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1600px;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    
+    .table-center th, .table-center td {
+        color: #565656;
+        border: 15px solid #ffffff;
+        padding: 20px 45px;
+        text-align: left;
+    }
+    
+    .table-center th {
+        color: #565656;
+        background-color: #c7c6c6;
+    }
+    
+    .table-center td button {
+        background-color: white;
+        color: #565656;
+        border: none;
+        padding: 15px 20px;
+        cursor: pointer;
+    }
+    
+    /* .table-center td button:hover {
+        background-color: #454545;
+    } */
+    
+    .fa-xmark::before {
+        content: '\2716'; /* Unicode character for a bold X */
+        font-weight: bold;
+    }
+    /* Style for the fashion box container */
+    .fashion-box {
+        background-color: #ccc;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        max-width: 1100px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px; /* Add top margin as needed */
+    }
+    
+    /* Style for the box header */
+    .box-header {
+        background-color: #ff9700;
+        /* max-width: 100%; */
+        border-radius: 5px;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+    
+    .box-header a{
+        color: #ffffff;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+    .box-header a:hover{
+        cursor: pointer;
+    }
+    .box-header h4{
+        font-size: 20px;
+        color: #ffffff;
+        margin-left: 30px;
+    }
+    
+    /* Style for the box body */
+    .box-body {
+        padding: 100px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Style for the wishlist items */
+    .wishlists-items {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    /* Style for each wishlist item */
+    .wishlists-items a {
+        margin: 30px;
+        text-decoration: none;
+    }
+    
+    /* Style for the wishlist item images */
+    .wishlists-items img {
+        max-width: 100%;
+        height: auto;
+        /* border: 1px solid #ddd; */
+        border-radius: 4px;
+    }
+    
+    .row1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .row002{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    
+    /* Style for the "SEND" button */
+    .col-bt01 button {
+        background-color: #ff9700;
+        color: #fff;
+        margin-top: 100px;
+        padding: 15px 55px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    /* Style for the "SAVE" button */
+    .col-bn02 button {
+        background-color: #ff9700;
+        color: #fff;
+        padding: 15px 55px;
+        border: none;
+        margin-top: 100px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .button-xs i{
+        color: #ffffff;
+        font-size: 15px;
+    }
+    .col-bt01 button:hover {
+        background-color: #e78b00;
+    }
+    .col-bn02 button:hover {
+        background-color: #e78b00;
+    }
+    
+    .row1 a span {
+        display: inline-block;
+        position: absolute;
+        margin-left: 60px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 50%;
+        background-color: #ff9700; /* Change the background color as needed */
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .row1 a img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+    .row1 a {
+        text-decoration: none;
+        margin: 10px 30px;
+        text-align: center;
+    }      
+    /* Add styles for the JOIN EIGHTORANGE STORE section */ */
+
+    section.JOIN-EIGHTORANGE-STORE {
+        background-color: #f9f9f9;
+        padding: 50px 0;
+        text-align: center;
+    }
+    section.JOIN-EIGHTORANGE-STORE, .container1{
+        width: 100%;
+    }
+    div input:focus{
+        outline: none;
+    }
+
+    section.JOIN-EIGHTORANGE-STORE h3 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    section.JOIN-EIGHTORANGE-STORE h5 {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 30px;
+    }
+    .container1{
+        margin-top: 50px;
+        padding: 50px 0;
+        background-color: #ff9700;
+    }
+
+    .container-row {
+        width: 60%;
+        margin-left: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col-mss2 {
+        flex: 1;
+        margin: 0 10px;
+        text-align: center; /* Center text within each column */
+    }
+    .col-mss3{
+        margin-top: -11px;
+    }
+    .col-mss3 a{
+        flex: 1;
+        margin-top: -17px;
+        background-color: #b1700e;
+        padding: 12px;
+    }
+
+    .primary-inputs1 {
+        width: 100%;
+        background-color: #ff9700;
+        padding: 10px;
+        border: 3px solid #ffffff;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        list-style: none;
+    }
+
+    .button1 {
+        /* padding: 5px; */
+        background-color: #b1700e;
+        color: #fff;
+        list-style: none;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #b1700e;
+    }
+
+
+    h2 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+
+    h5 {
+        text-align: center;
+        font-size: 16px;
+        color: #ffffff;
+        margin-bottom: 30px;
+    }
+    /* container-footer */
+    .container-footer {
+        font-size: 13px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .row2 {
+        flex-wrap: wrap;
+        /* height: 300px; */
+        max-width: 240px; /* Adjust the maximum width as needed */
+    }
+
+    h4 {
+        color: #333;
+    }
+
+
+    .row2 p{
+        margin: 15px 0;
+        color: #666;
+    }
+    .sl-ma a{
+        margin: 5px;
+    }
+
+    i {
+        color: #ff9700;
+        margin-right: 5px;
+    }
+
+    a {
+        color: #ff9700;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    .phone{
+        color: #666;
+    }
+    .contact{
+        color: #666;
+    }
+    i.bx {
+        font-size: 34px; /* Adjust the size as needed */
+    }
+
+    i.bxs-map, i.bxs-phone, i.bxs-envelope,
+    i.bxl-facebook-circle, i.bxl-twitter,
+    i.bxl-linkedin-square, i.bxl-google-plus-circle, i.bxl-pinterest {
+        font-size: 30px; /* Adjust the size as needed */
+    }
+    i.bxl-facebook-circle, i.bxl-twitter,
+    i.bxl-linkedin-square, i.bxl-google-plus-circle, i.bxl-pinterest{
+        margin: 15px 0;
+    }
+    /* row3 */
+    .row3 {
+        display: flex;
+        flex-direction: column; /* Set the direction to column for stacking items vertically */
+        /* align-items: center; /* Align items at the center horizontally */
+    } */
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    li {
+        list-style: none;
+        margin: 10px; /* Adjust the spacing between items as needed */
+    }
+
+    a {
+        text-decoration: none;
+        color: #333; /* Set the color for the links */
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    .row4 {
+        display: flex;
+        flex-direction: column; /* Set the direction to column for stacking items vertically */
+        /* align-items: center; /* Align items at the center horizontally */
+    } */
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    li {
+        list-style: none;
+        margin: 10px; /* Adjust the spacing between items as needed */
+    }
+
+    a {
+        text-decoration: none;
+        color: #333; /* Set the color for the links */
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    .row-55{
+        padding: 12px;
+        width: 210px;
+        height: 220px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-between;
+        /* Set the direction to column for stacking items vertically */
+    }
+    .row5 {
+        display: flex;
+        flex-direction: column; /* Set the direction to column for stacking items vertically */
+        /* align-items: center; /* Align items at the center horizontally */
+    } */
+
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    li {
+        list-style: none;
+        margin: 10px; /* Adjust the spacing between items as needed */
+    }
+
+    .row-55 a {
+        text-decoration: none;
+        color: #ffffff; /* Set the color for the links */
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    .xs-1, .xs-2, .xs-3, .xs-4, .xs-5, .xs-6, .xs-7, .xs-8, .xs-9{
+        background-color: #f8a62d;
+        padding: 5px;
+    }
+    .row2, .row3, .row4, .row5, .row{
+        justify-content: space-between;
+        align-items: center;
+    }

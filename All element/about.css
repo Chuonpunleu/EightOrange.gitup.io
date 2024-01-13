@@ -1,0 +1,108 @@
+/* Global styles for your about page */
+.about-container {
+    position: relative;
+}
+
+.about-image-container {
+    position: relative;
+}
+
+.about-image-container img {
+    width: 100%;
+}
+
+.eight-text-box {
+    position: absolute;
+    top: 50%; /* Center the text vertically */
+    left: 0; /* Align the text to the left edge */
+    right: 0; /* Align the text to the right edge */
+    text-align: center; /* Center the text horizontally */
+    color: white;
+    font-size: 40px; /* Adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    padding: 20px;
+    border: 5px solid #f5dfdf; /* Add a border around the text */
+    border-width: 5px;
+    border-radius: 3px; /* Optional: Add border-radius for rounded corners */
+    transform: translate(0, -50%); /* Center the text using margin */
+    width: 1000px;
+    margin-left: 6cm;
+}
+
+.my-box04 {
+    width: 100%;
+    max-width: 1200px;
+    height: 70px;
+    color: #a09c9c;
+    background-color: #333232;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-icons-container {
+    display: flex;
+    justify-content: space-evenly; /* Center the items with space between them */
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.icon-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.icon-item img {
+    margin-bottom: 10px;
+}
+
+.p1,
+.p2,
+.p3,
+.p4 {
+    margin-top: 10px; /* Adjust the space between text and icon */
+    max-width: 120px; /* Adjust the max-width as needed */
+    text-align: center; /* Center the text */
+}
+
+.about-text-box-container {
+    display: flex;
+    justify-content: space-around; /* Center the items with space between them */
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.box-text07{
+    margin-top: 20px;
+}
+.about-text-box001,
+.about-text-box002,
+.about-text-box003,
+.about-text-box004 {
+    width: calc(25% - 30px); /* Adjust the width as needed with space between */
+    margin-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-buy-now001 {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 200px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    color: white;
+    background-color: rgb(235, 94, 13);
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

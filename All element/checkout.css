@@ -1,0 +1,324 @@
+.name-body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+.check-name{
+    margin-left: 170px;
+    margin-top: 50px;
+}
+.name .name-text{
+    text-align: center;
+    margin-left: 170px;
+    margin-top: 40px; /* Set left and right margin to auto */
+    padding: 30px;
+    background-color: #808283;
+    color: #fff;
+    max-width: 600px; /* Reduced width */
+    display: flex; /* Use flexbox to arrange icon and text */
+    align-items: center; /* Center vertically */
+    border-radius: 5px;
+}
+
+.name .name-text{
+    font-size: 18px;
+    font-weight: bold;
+}
+.contact-form-container {
+    width: 60%;
+}
+
+.contact-form {
+    width: 73.5%;
+    margin-bottom:-30px ;
+    border-radius: 10px;
+}
+
+.name-container {
+    display: flex;
+}
+
+.input-group {
+    flex: 1;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+}
+
+/* Adjust the following CSS rule to place the last name on the right side */
+#lastname {
+    order: 1;
+}
+
+.email{
+    margin-left: 100px;
+}
+#email {
+    width: 43.3%;
+    margin-left: 170px;
+}
+#address{
+    width: 43.3%;
+    margin-left: 170px;
+
+}
+#address1{
+    width: 43.3%;
+    margin-left: 170px;
+    margin-top:30px;
+}
+.contact-form-container1 {
+    width: 60%;
+}
+
+.contact-form1 {
+    width: 20%;
+    margin-bottom:-30px ;
+    border-radius: 10px;
+}
+
+.name-container1 {
+    display: flex;
+}
+
+.input-group1 {
+    flex: 1;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+#city{
+    order: 1;
+}
+
+.city{
+    margin-left: 100px;
+}
+#city {
+    width: 73%;
+    margin-left: 170px;
+}
+#state1 {
+    width: 50%;
+    height: 20px;
+    margin-left: -180px;
+}
+#state-option select {
+    width: 320px; /* Adjust the width as needed */
+    height: 35px; /* Adjust the height as needed */
+    margin-left: 50px;
+    border-radius: 5px;
+    margin-top:-3px;
+}
+.contact-form-container2 {
+    width: 100%;
+}
+
+.contact-form2 {
+    width: 100%;
+    margin-bottom:-30px ;
+    border-radius: 10px;
+}
+
+.name-container2 {
+    display: flex;
+}
+
+.input-group2 {
+    flex: 1;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+.zip{
+    margin-left: 100px;
+}
+#zip{
+    order: 1;
+}
+
+#zip{
+    width: 73%;
+    margin-left: 170px;
+}
+#country1 {
+    width:50%;
+    height: 20px;
+    margin-left: 50px;
+}
+#country-option select{
+    width: 320px; /* Adjust the width as needed */
+    height: 35px; /* Adjust the height as needed */
+    margin-left: 50px;
+    border-radius: 5px;
+    margin-top:-5px;
+}
+.contact-form-container3 {
+    width: 100%;
+}
+
+.contact-form3 {
+    width: 50%;
+    margin-bottom:-30px ;
+    border-radius: 10px;
+}
+
+.name-container3 {
+    display: flex;
+}
+
+.input-group3{
+    flex: 1;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+#mobile {
+    order: 1;
+}
+#mobile {
+    width: 72%;
+    margin-left: 50px;
+}
+
+#telephone1 {
+    width: 73%;
+    margin-left: 170px;
+}
+#telephone{
+    width: 73%;
+    margin-left: 170px;
+
+}
+
+.payment .payment-text{
+    text-align: center;
+    margin-left: 170px;
+    margin-top: 40px; /* Set left and right margin to auto */
+    padding: 30px;
+    background-color: #808283;
+    color: #fff;
+    max-width: 600px; /* Reduced width */
+    display: flex; /* Use flexbox to arrange icon and text */
+    align-items: center; /* Center vertically */
+    border-radius: 5px;
+}
+
+.payment .payment-text{
+    font-size: 18px;
+    font-weight: bold;
+}
+.credit-cards{
+    margin-left: 165px;
+    margin-top: 20px;
+}
+
+#expiration{
+    margin-top: 49px;
+}
+
+.contact-form-container4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-container4 {
+    margin-bottom: 10px; /* Adjust margin as needed for spacing between sections */
+}
+
+.input-group4 {
+    display: flex;
+    align-items: center;
+    margin-left: 170px;
+}
+
+.month-option select,
+.year-option select {
+    width: 150px; /* Adjust the width as needed */
+    height: 35px; /* Adjust the height as needed */
+    border-radius: 5px;
+    margin-right:20px; /* Adjust the margin as needed for spacing between elements */
+    margin-top: 80px;
+}
+#number{
+    margin-left:170px;
+}
+.cvv-number{
+    width: 150px; /* Adjust the width as needed */
+    height: 35px; /* Adjust the height as needed */
+    border-radius: 5px;
+    margin-left:170px;
+}
+.check-buy-now{
+    background-color:#ff8c00; 
+    color: #fff;
+    padding: 25px 100px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-left: 170px;
+    transition: opacity 0.3s;
+}
+.col-sm-4{
+    width:50%
+}
+#col-sm-4{
+    width: 380px;
+    margin-left: 950px;
+    margin-top: -1350px;
+    border-radius: 8px;
+}
+.shipping-block{
+    margin-top: 20px;
+    padding: 10px 0px 30px 10px;
+    margin-left: 80px;
+}
+.checkout-sidebar{
+    margin-bottom: 700px;
+    background-color: lightgray;
+}
+.payment-block{
+    margin-top: 25px;
+    margin-left: 80px;
+    padding: 10px 10px 10px 10px;
+}
+.separator-banner {
+    height: 20px; /* Adjust the height according to your design */
+    background-color:#fff; /* Choose the background color you prefer */
+    border-radius: -8px;
+}
+
+.radio-btn {
+    display: flex;
+    align-items: center;
+}
+
+.radio-btn input {
+    margin-right: 5px; /* Adjust the margin as needed */
+}
+
+.radio-btn label {
+    display: inline-block;
+    margin-bottom: 30px; /* Reset margin */
+}
+.button1{
+    width: 200px;
+    height: 50px;
+    margin-left: 90px;
+    margin-bottom: 50px;
+    background-color: #ff8c00;
+    border-radius: 5px;
+
+}
+.radio-btn {
+    display: flex;
+    align-items: center;
+}
+
+.radio-btn img {
+    margin-right: 5px; /* Adjust the margin as needed */
+}
+#credit{
+    width: 130px;
+}

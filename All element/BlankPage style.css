@@ -1,0 +1,739 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    display: flex; /* Make the banner a flex container */
+    align-items: center;
+    justify-content: space-between; /* Spread the children elements */
+    background-color: lightgrey;
+    /* padding: 3px; */
+}
+.welcome-text p{
+    width: 150px;
+    font-size: 13px;
+    margin-left: 15px;
+    color: #050505;
+}
+.social-icons, .currency-options{
+    display: flex;
+    margin: 35px -10;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-left:930px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #050505;
+    padding: 4px;
+
+}
+
+.currency-options select {
+    width: 70px;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 30px;
+}
+
+
+.search-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.search-section {
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 60px;
+}
+
+.categories-dropdown {
+    flex: 1; /* Allow the dropdown to take remaining space */
+    padding: 8px;
+    height: 39px;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 5px;
+    margin-left: 500px;
+}
+
+.search-box {
+    flex: 2; /* Allow the search box to take more space */
+    padding: 10px;
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+
+.search-button {
+    background-color: #ffffff;
+    color: orange;
+    border: 2px solid orange;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.account-dropdown
+.cart-dropdown{
+    font-size: 16px;
+    color: orange;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+
+.account-dropdown i,
+.cart-dropdown i {
+    font-size: 28px; /* Adjust icon size */
+}
+
+.account-dropdown-text,
+.cart-dropdown-text {
+    display: flex;
+    color: orange;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center; /* Align text to the center */
+    border-radius: 5px; /* Make it round */
+    width: 200px; /* Adjusted width */
+    top: 50px; /* Adjusted top position */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.account-dropdown:hover .dropdown-content,
+.cart-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Adjusted margin for better spacing */
+.account-dropdown {
+    margin-left: 100px;
+}
+
+.cart-dropdown {
+    margin-right: 100px;
+}
+
+ /* Modal styles */
+ .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.account-card {
+    background-color: #f90; /* Orange background color for the upper part */
+    padding: 10px;
+    border-radius: 8px 8px 8px 8px; /* Rounded corners, top-left and top-right */
+    position: relative;
+}
+
+.account-card h2 {
+    color: #fff; /* White text color */
+    margin: 30px 40px;
+}
+
+.account-card form {
+    width: 350px; /* Set the desired width */
+    height: 360px;
+    margin: 0 auto; /* Center the form */
+}
+
+.account-card form input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 20px; /* Add space between input elements */
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.account-card form button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    width: 90%;
+    background-color: #e46701;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.additional-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add space between the form and additional links */
+}
+
+.additional-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+ /* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.account-card {
+    background-color: #f90; /* Orange background color for the upper part */
+    padding: 10px;
+    border-radius: 8px 8px 8px 8px; /* Rounded corners, top-left and top-right */
+    position: relative;
+}
+
+.account-card h2 {
+    color: #fff; /* White text color */
+    margin: 30px 40px;
+}
+
+.account-card form {
+    width: 350px; /* Set the desired width */
+    height: 360px;
+    margin: 0 auto; /* Center the form */
+}
+
+.account-card form input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 20px; /* Add space between input elements */
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.account-card form button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    width: 90%;
+    background-color: #e46701;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.additional-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add space between the form and additional links */
+}
+
+.additional-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*Login form*/
+.login-card {
+    background-color: #f90; /* Orange background color for the upper part */
+    padding: 10px;
+    border-radius: 8px 8px 8px 8px; /* Rounded corners, top-left and top-right */
+    position: relative;
+}
+
+.login-card h2 {
+    color: #fff; /* White text color */
+    margin: 30px 40px;
+}
+
+.login-card form {
+    width: 350px; /* Set the desired width */
+    height: 200px;
+    margin: 0 auto; /* Center the form */
+}
+
+.login-card form input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 20px; /* Add space between input elements */
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.login-card form button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    width: 90%;
+    background-color: #e46701;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.additional-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add space between the form and additional links */
+}
+
+.additional-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+            color: white;
+            height: 50px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(240, 156, 1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar a.active {
+            background-color: rgb(240, 156, 1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    /*Pages drop down*/
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+  
+      nav {
+        background-color: #333;
+        overflow: hidden;
+      }
+  
+      nav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+  
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+  
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+  
+      .nav-content {
+        display: none;
+        position: absolute;
+        background-color: orange;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+  
+      .nav-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+  
+      .dropdown:hover .nav-content {
+        display: block;
+      }
+      .cart-dropdown, .account-dropdown i{
+        color: orange;
+      }
+     
+      /*  main section start */
+     .main-section {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     }
+     .main-section-text h6{
+        font-family: 'Engravers MT';
+        margin: 0 10px;
+        text-align: center;
+        color: #555; 
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .main-section-text p{
+        margin: 0 10px;
+        text-align: center; 
+        color: #838383;
+        font-size: 14px;
+        line-height: 50px;
+    }
+      /* main section end */
+     
+     
+      /* Add styles for the JOIN EIGHTORANGE STORE section */
+
+section.JOIN-EIGHTORANGE-STORE {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+section.JOIN-EIGHTORANGE-STORE h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section.JOIN-EIGHTORANGE-STORE h5 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+.container{
+    margin-top: 50px;
+    padding: 50px 0;
+    background-color: #ff9700;
+}
+
+.container-row {
+    width: 60%;
+    margin-left: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-mss2 {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center; /* Center text within each column */
+}
+
+.primary-inputs {
+    width: 100%;
+    background-color: #ff9700;
+    padding: 10px;
+    border: 3px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 11px;
+    margin-top: -15px;
+    background-color: #b1700e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #b1700e;
+}
+
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+h5 {
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+/* container-footer */
+.container-footer {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.row2 {
+    flex-wrap: wrap;
+    /* height: 300px; */
+    max-width: 240px; /* Adjust the maximum width as needed */
+}
+
+h4 {
+    color: #333;
+}
+
+
+.row2 p{
+    margin: 15px 0;
+    color: #666;
+}
+.sl-ma a{
+    margin: 5px;
+}
+
+i {
+    color: #ff9700;
+    margin-right: 5px;
+}
+
+a {
+    color: #ff9700;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.phone{
+    color: #666;
+}
+.contact{
+    color: #666;
+}
+i.bx {
+    font-size: 34px; /* Adjust the size as needed */
+}
+
+i.bxs-map, i.bxs-phone, i.bxs-envelope,
+i.bxl-facebook-circle, i.bxl-twitter,
+i.bxl-linkedin-square, i.bxl-google-plus-circle, i.bxl-pinterest {
+    font-size: 30px; /* Adjust the size as needed */
+}
+i.bxl-facebook-circle, i.bxl-twitter,
+i.bxl-linkedin-square, i.bxl-google-plus-circle, i.bxl-pinterest{
+    margin: 15px 0;
+}
+/* row3 */
+.row3 {
+    display: flex;
+    flex-direction: column; /* Set the direction to column for stacking items vertically */
+    /* align-items: center; /* Align items at the center horizontally */
+} */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
+    justify-content: center; /* Center items horizontally */
+}
+
+li {
+    list-style: none;
+    margin: 10px; /* Adjust the spacing between items as needed */
+}
+
+a {
+    text-decoration: none;
+    color: #333; /* Set the color for the links */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.row4 {
+    display: flex;
+    flex-direction: column; /* Set the direction to column for stacking items vertically */
+    /* align-items: center; /* Align items at the center horizontally */
+} */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
+    justify-content: center; /* Center items horizontally */
+}
+
+li {
+    list-style: none;
+    margin: 10px; /* Adjust the spacing between items as needed */
+}
+
+a {
+    text-decoration: none;
+    color: #333; /* Set the color for the links */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.row-55{
+    padding: 12px;
+    width: 210px;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+     /* Set the direction to column for stacking items vertically */
+}
+.row5 {
+    display: flex;
+    flex-direction: column; /* Set the direction to column for stacking items vertically */
+    /* align-items: center; /* Align items at the center horizontally */
+} */
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if there's not enough space */
+    justify-content: center; /* Center items horizontally */
+}
+
+li {
+    list-style: none;
+    margin: 10px; /* Adjust the spacing between items as needed */
+}
+
+.row-55 a {
+    text-decoration: none;
+    color: #ffffff; /* Set the color for the links */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.xs-1, .xs-2, .xs-3, .xs-4, .xs-5, .xs-6, .xs-7, .xs-8, .xs-9{
+    background-color: #f8a62d;
+    padding: 5px;
+}
+.row2, .row3, .row4, .row5, .row{
+    justify-content: space-between;
+}
+input:focus{
+    outline: none;
+}

@@ -1,0 +1,216 @@
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.account-card {
+    background-color: #f90; /* Orange background color for the upper part */
+    padding: 10px;
+    border-radius: 8px 8px 8px 8px; /* Rounded corners, top-left and top-right */
+    position: relative;
+}
+
+.account-card h2 {
+    color: #fff; /* White text color */
+    margin: 30px 40px;
+}
+
+.account-card form {
+    width: 350px; /* Set the desired width */
+    height: 360px;
+    margin: 0 auto; /* Center the form */
+}
+
+.account-card form input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 20px; /* Add space between input elements */
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.account-card form button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    width: 90%;
+    background-color: #e46701;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.additional-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add space between the form and additional links */
+}
+
+.additional-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+ /* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.account-card {
+    background-color: #f90; /* Orange background color for the upper part */
+    padding: 10px;
+    border-radius: 8px 8px 8px 8px; /* Rounded corners, top-left and top-right */
+    position: relative;
+}
+
+.account-card h2 {
+    color: #fff; /* White text color */
+    margin: 30px 40px;
+}
+
+.account-card form {
+    width: 350px; /* Set the desired width */
+    height: 360px;
+    margin: 0 auto; /* Center the form */
+}
+
+.account-card form input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 20px; /* Add space between input elements */
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.account-card form button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    width: 90%;
+    background-color: #e46701;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.additional-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add space between the form and additional links */
+}
+
+.additional-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*Login form*/
+.login-card {
+    background-color: #f90; /* Orange background color for the upper part */
+    padding: 10px;
+    border-radius: 8px 8px 8px 8px; /* Rounded corners, top-left and top-right */
+    position: relative;
+}
+
+.login-card h2 {
+    color: #fff; /* White text color */
+    margin: 30px 40px;
+}
+
+.login-card form {
+    width: 350px; /* Set the desired width */
+    height: 200px;
+    margin: 0 auto; /* Center the form */
+}
+
+.login-card form input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 20px; /* Add space between input elements */
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.login-card form button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    width: 90%;
+    background-color: #e46701;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.additional-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add space between the form and additional links */
+}
+
+.additional-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}

@@ -1,0 +1,205 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+}
+
+.page-wrap {
+    max-width: 940px;
+    max-height: 100.4px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.page-name {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.Orders-Search {
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #b5b5b5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-sm1,
+.col-sm2,
+.col-sm3 {
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+/* Style the select box */
+.Styled-slect select {
+    width: 100%;
+    padding: 8px;
+    background-color: #b5b5b5;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.input-label{
+    margin-left: 10px;
+}
+
+/* Style the input box */
+.primary-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 6px; 
+    box-sizing: border-box;
+}
+
+/* Style the filter button */
+.dark-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dark-button:hover {
+    background-color: #555;
+}
+#Search-Buy {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #b5b5b5;
+}
+.table-orders {
+    width: 63%;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: block;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 10px solid white;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    color: white;
+    background-color: #444444;
+}
+
+.table td i {
+    margin-right: 5px;
+}
+
+.table td:last-child {
+    position: relative;
+}
+
+.table td i.bx-check-square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #2ecc71;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .table th,
+    .table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .table td:last-child {
+        position: static;
+        text-align: center;
+    }
+}
+/* Additions to the existing styles */
+
+/* Status icons */
+.bx.bxs-cart-alt,
+.bx.bxs-bus,
+.bx.bx-home {
+    font-size: 28px;
+
+    color: #444444;
+}
+
+/* color icon */
+#bus{
+    color: #ff9700;
+}
+#cart{
+    color: #ff9700;
+}
+#home{
+    color: #ff9700;
+}
+
+/* Date formatting */
+.table td:nth-child(2) {
+    white-space: nowrap;
+}
+
+/* Highlight the checked rows */
+.table tr.checked-row {
+    background-color: #ecf0f1;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .table th,
+    .table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .table td:nth-child(2) {
+        text-align: center;
+    }
+
+    .table td:last-child {
+        position: static;
+        text-align: center;
+    }
+}
+.Product-1{
+    background-color: #d2d2d2;
+}
+.Product-2{
+    background-color: #afafaf;
+}
+input:focus{
+    outline: none;
+}
+
+
+
+
